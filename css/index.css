@@ -12,17 +12,6 @@ body {
 
 /* HEADER */
 
-/*@media screen and (max-width: 600px){
-header {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-}*/
-
 header nav {
   padding: 0 50px;
   display: flex;
@@ -35,6 +24,7 @@ header nav img {
   width: 100px;
   margin-top: 30px;
 }
+
 .contato {
   border-radius: 50px;
   background-color: rgb(0, 0, 0);
@@ -90,9 +80,11 @@ header nav ul a:hover {
   font-size: 20px;
   margin-top: 5px;
 }
+
 #linkedin {
   margin-top: 15px;
 }
+
 #retangulo {
   z-index: -1;
   height: 100%;
@@ -115,12 +107,7 @@ header nav ul a:hover {
   flex-direction: row;
   font-family: "Raleway", sans-serif;
   justify-content: center;
-  background: linear-gradient(
-    90.18deg,
-    #1d1d1d 31.74%,
-    #1d1d1d 90.49%,
-    #1d1d1d 90.49%
-  );
+  background: linear-gradient( 90.18deg, #1d1d1d 31.74%, #1d1d1d 90.49%, #1d1d1d 90.49%);
 }
 
 .section2 h1 {
@@ -138,14 +125,6 @@ header nav ul a:hover {
   font-family: "Raleway", sans-serif;
   text-align: justify;
 }
-
-/*@media only screen and (max-width: 600px) {
-
-.section2  img {
-  max-width: 600px;
-  margin: 0 auto;
-  }
-}*/
 
 .section2 img {
   width: 170px;
@@ -190,15 +169,14 @@ header nav ul a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 100px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "Professor . Engenheiro"
-    ". Projetista .";
+  grid-template-areas: "Professor . Engenheiro" ". Projetista .";
 }
 
 .Professor {
@@ -260,6 +238,7 @@ header nav ul a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
 #programação {
   padding: 50px;
   display: block;
@@ -382,26 +361,6 @@ header nav ul a:hover {
   display: block;
 }
 
-/*@media only screen and (max-width: 600px) {
-  #aspas {
-    padding: 10px 40px;
-    display: flex;
-  }
-  .container_depositions {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  
-    #networking {
-    height: 300px;
-    margin-top: 30px;
-  }
-  
-  #depositions {
-    height: 300px;
-    margin-top: 30px;
-  }
-}*/
-
 .footer {
   font-family: "Raleway", sans-serif;
   font-size: 12px;
@@ -426,13 +385,14 @@ header nav ul a:hover {
 }
 
 /* Hide the images by default */
+
 .mySlides {
   display: none;
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -448,18 +408,20 @@ header nav ul a:hover {
 }
 
 /* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+
+.prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -471,6 +433,7 @@ header nav ul a:hover {
 }
 
 /* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -480,6 +443,7 @@ header nav ul a:hover {
 }
 
 /* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -491,12 +455,12 @@ header nav ul a:hover {
   transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
+.active, .dot:hover {
   background-color: #717171;
 }
 
 /* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -522,5 +486,43 @@ header nav ul a:hover {
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section2 {
+    flex-direction: column;
+  }
+  .section2 .content {
+    background: url('../imagens/Logo_inclined.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .section2 h2 {
+    z-index: 1;
+  }
+  .section2 img {
+    display: none;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "Professor" "Engenheiro" "Projetista";
+  }
+  .container_depositions {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "depoimento1" "depoimento2";
+  }
+  #networking {
+    display: none;
+  }
+  #depositions {
+    display: none;
+  }
+  .skill_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px 0px;
+  }
 }
