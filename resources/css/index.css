@@ -1,0 +1,642 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+/* HEADER */
+
+/*@media screen and (max-width: 600px){
+header {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}*/
+
+header nav {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav img {
+  width: 100px;
+  margin-top: 30px;
+}
+.contato {
+  border-radius: 50px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  padding: 0px 10px;
+}
+
+header nav ul {
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  padding: 15px;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header nav ul a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* MAIN */
+
+.section1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  min-height: 100vh;
+  padding: 0 50px;
+}
+
+.left_section1 {
+  padding: 200px 0;
+  color: #010080;
+}
+
+.section1 h1 {
+  font-size: 30px;
+}
+
+.section1 h2 {
+  font-size: 40px;
+}
+
+.section1 h3 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+#linkedin {
+  margin-top: 15px;
+}
+#retangulo {
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#vinicius {
+  height: 700px;
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+}
+
+.section2 {
+  margin-top: -130px;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: row;
+  font-family: "Raleway", sans-serif;
+  justify-content: center;
+  background: linear-gradient(
+    90.18deg,
+    #1d1d1d 31.74%,
+    #1d1d1d 90.49%,
+    #1d1d1d 90.49%
+  );
+}
+
+.section2 h1 {
+  font-size: 20px;
+  padding-top: 30px;
+  padding: 10px 0px;
+}
+
+.section2 h2 {
+  font-size: 16px;
+}
+
+.content {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+}
+
+/*@media only screen and (max-width: 600px) {
+
+.section2  img {
+  max-width: 600px;
+  margin: 0 auto;
+  }
+}*/
+
+.section2 img {
+  width: 170px;
+}
+
+.section3 {
+  min-height: 100vh;
+  flex-direction: row;
+  padding: 0px 50px;
+  justify-content: center;
+}
+
+.sobre_title h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  max-height: 60px;
+  padding: 10px 10px;
+  border: 5px solid;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.section3 h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  padding: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+  width: 600px;
+}
+
+#separador {
+  padding-top: -30px;
+  padding: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 100px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Professor . Engenheiro"
+    ". Projetista .";
+}
+
+.Professor {
+  grid-area: Professor;
+}
+
+.Engenheiro {
+  grid-area: Engenheiro;
+}
+
+.Projetista {
+  grid-area: Projetista;
+}
+
+.icon_sobre {
+  position: absolute;
+}
+
+.container h1 {
+  text-align: left;
+  padding: 30px 50px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+.container p {
+  font-size: 16px;
+  text-align: justify;
+  font-family: "Raleway", sans-serif;
+}
+
+#separador1 {
+  padding: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.habilidades h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  padding: 10px 100px;
+  border: 5px solid;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.section4 h2 {
+  font-size: 20px;
+  padding: 20px 50px;
+  padding-top: 40px;
+}
+
+#usando_agora {
+  padding: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#programação {
+  padding: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section5 h1 {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  max-height: 60px;
+  padding: 10px 10px;
+  border: 5px solid;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.container_orange {
+  margin-top: 50px;
+  background: linear-gradient(0deg, #ff6501, #ff6501);
+  height: 150px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.skill_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.skill_container div {
+  height: 180px;
+  padding: 30px;
+}
+
+.skill_container h1 h2 {
+  padding: 50px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .skill_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.container_blue {
+  background-color: #010080;
+  height: 700px;
+  padding: 100px;
+}
+
+.section6 h1 {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  max-height: 60px;
+  padding: 10px 10px;
+  border: 5px solid;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.section6 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  padding: 10px 50px;
+  text-align: justify;
+  word-wrap: break-word;
+  width: 600px;
+}
+
+.container_depositions {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 100px 300px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#aspas {
+  padding: 10px 40px;
+  display: flex;
+}
+
+#aspas1 {
+  padding: 0px 60px;
+  margin-left: auto;
+  display: flex;
+}
+
+#networking {
+  height: 300px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#depositions {
+  height: 300px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/*@media only screen and (max-width: 600px) {
+  #aspas {
+    padding: 10px 40px;
+    display: flex;
+  }
+  .container_depositions {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+    #networking {
+    height: 300px;
+    margin-top: 30px;
+  }
+  
+  #depositions {
+    height: 300px;
+    margin-top: 30px;
+  }
+}*/
+
+.footer {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+  background-color: #ff6501;
+  height: 300px;
+  color: #fff;
+}
+
+.footer_text h1 {
+  padding: 30px;
+}
+
+/* carousel*/
+
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+.slide img {
+  width: 800px;
+  height: 500px;
+}
+/*css for manual slide navagation*/
+
+.navigation_manual {
+  position: absolute;
+  width: 800px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #ff6501;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 30px;
+}
+
+.manual-btn:hover {
+  background-color: #ff6501;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+#radio5:checked ~ .first {
+  margin-left: -80%;
+}
+#radio6:checked ~ .first {
+  margin-left: -100%;
+}
+#radio7:checked ~ .first {
+  margin-left: -120%;
+}
+#radio8:checked ~ .first {
+  margin-left: -140%;
+}
+#radio9:checked ~ .first {
+  margin-left: -160%;
+}
+
+/*css for automatic slide navagation*/
+
+.navigation_auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 540px;
+}
+.navigation_auto div {
+  border: 2px solid #ff6501;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.navigation_auto div:not(:last-child) {
+  margin-right: 30px;
+}
+
+#radio1:checked ~ .navigation_auto .auto-btn1 {
+  background: #ff6501;
+}
+#radio2:checked ~ .navigation_auto .auto-btn2 {
+  background: #ff6501;
+}
+#radio3:checked ~ .navigation_auto .auto-btn3 {
+  background: #ff6501;
+}
+#radio4:checked ~ .navigation_auto .auto-btn4 {
+  background: #ff6501;
+}
+#radio5:checked ~ .navigation_auto .auto-btn5 {
+  background: #ff6501;
+}
+#radio6:checked ~ .navigation_auto .auto-btn6 {
+  background: #ff6501;
+}
+#radio7:checked ~ .navigation_auto .auto-btn7 {
+  background: #ff6501;
+}
+#radio8:checked ~ .navigation_auto .auto-btn8 {
+  background: #ff6501;
+}
+#radio9:checked ~ .navigation_auto .auto-btn9 {
+  background: #ff6501;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
