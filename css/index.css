@@ -135,6 +135,7 @@ header nav ul a:hover {
   flex-direction: row;
   padding: 0px 50px;
   justify-content: center;
+   
 }
 
 .sobre_title h1 {
@@ -156,11 +157,11 @@ header nav ul a:hover {
   font-size: 16px;
   padding: 50px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   word-wrap: break-word;
   width: 600px;
-}
+  margin: 0 auto;
+
+  }
 
 #separador {
   padding-top: -30px;
@@ -209,10 +210,12 @@ header nav ul a:hover {
 }
 
 #separador1 {
-  padding: 100px;
+  padding-top: -30px;
+  padding: 50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .habilidades h1 {
@@ -524,5 +527,13 @@ header nav ul a:hover {
   .skill_container {
     grid-template-columns: repeat(2, 1fr);
     gap: 100px 0px;
+  }
+  .sobre h2 {
+    padding: 30px;
+    text-align: justify;
+    width: 300px;
+  }
+  #separador {
+    align-items: center;
   }
 }
