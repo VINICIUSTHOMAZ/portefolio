@@ -553,15 +553,16 @@ header nav ul a:hover {
   .container_depositions p {
     padding: 0px 40px;
     margin: 0 auto;
-    width: 400px;
+    width: 320px;
+    
   }
 
   #aspas_1 {
-    margin-left: -10px;
+    margin-left: 30px;
   }
 
   #aspas_2 {
-    margin-right: -70px;
+    margin-right: -30px;
   }
 
   #networking {
@@ -575,6 +576,13 @@ header nav ul a:hover {
     gap: 100px 0px;
   }
 
+  .skill_container h1{
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    
+  }
+
   .sobre_title {
     margin: 0 auto;
     justify-content: center;
@@ -586,7 +594,6 @@ header nav ul a:hover {
     margin: 0 auto;
     width: 300px;
     padding: 10px 40px;
-    background-color: violet;
     height: 0px 100px;
   }
   #separador {
