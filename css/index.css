@@ -107,7 +107,12 @@ header nav ul a:hover {
   flex-direction: row;
   font-family: "Raleway", sans-serif;
   justify-content: center;
-  background: linear-gradient( 90.18deg, #1d1d1d 31.74%, #1d1d1d 90.49%, #1d1d1d 90.49%);
+  background: linear-gradient(
+    90.18deg,
+    #1d1d1d 31.74%,
+    #1d1d1d 90.49%,
+    #1d1d1d 90.49%
+  );
 }
 
 .section2 h1 {
@@ -135,7 +140,6 @@ header nav ul a:hover {
   flex-direction: row;
   padding: 0px 50px;
   justify-content: center;
-   
 }
 
 .sobre_title h1 {
@@ -160,8 +164,7 @@ header nav ul a:hover {
   word-wrap: break-word;
   width: 600px;
   margin: 0 auto;
-
-  }
+}
 
 #separador {
   padding-top: -30px;
@@ -210,12 +213,12 @@ header nav ul a:hover {
 }
 
 #separador1 {
-  padding-top: -30px;
+  padding-top: -100px;
   padding: 50px;
+  margin-top: 50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .habilidades h1 {
@@ -227,6 +230,7 @@ header nav ul a:hover {
   border: 5px solid;
   width: 300px;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 .section4 h2 {
@@ -276,7 +280,16 @@ header nav ul a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  gap: 20px;
+  gap: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.skill_container1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 30px;
   text-align: center;
   font-size: 14px;
 }
@@ -290,8 +303,13 @@ header nav ul a:hover {
   padding: 50px 0px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .skill_container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin-right: -30px;
+  }
+  .skill_container1 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -332,7 +350,7 @@ header nav ul a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  gap: 100px 300px;
+  gap: 0px 300px;
   text-align: center;
   margin-top: 50px;
 }
@@ -343,7 +361,7 @@ header nav ul a:hover {
 }
 
 #aspas_2 {
-  padding: 0px 60px;
+  padding: 0px 100px;
   margin-left: auto;
   display: flex;
 }
@@ -395,7 +413,8 @@ header nav ul a:hover {
 
 /* Next & previous buttons */
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -419,7 +438,8 @@ header nav ul a:hover {
 
 /* On hover, add a black background color with a little bit see-through */
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -458,7 +478,8 @@ header nav ul a:hover {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -498,7 +519,7 @@ header nav ul a:hover {
     flex-direction: column;
   }
   .section2 .content {
-    background: url('../imagens/Logo_inclined.png');
+    background: url("../imagens/Logo_inclined.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -515,9 +536,29 @@ header nav ul a:hover {
     grid-template-areas: "Professor" "Engenheiro" "Projetista";
   }
   .container_depositions {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: "depoimento1" "depoimento2";
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: center;
+           
   }
+
+  .container_depositions p {
+    padding: 0px 120px;
+    }
+
+  #aspas_1 {
+    margin-left: 70px;
+  }
+
+  #aspas_2 {
+    margin-right: 10px;
+  }
+
+  
   #networking {
     display: none;
   }
