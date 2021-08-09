@@ -306,18 +306,15 @@ header nav ul a:hover {
   .skill_container {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    background-color: violet;
-    /*display: block;*/
+    display: block;
     width: 400px;
     margin: 0 auto;
-    
   }
   .skill_container1 {
     grid-template-columns: repeat(2, 1fr);
   }
   .skills {
     text-align: center;
-    
   }
 }
 
@@ -554,15 +551,17 @@ header nav ul a:hover {
   }
 
   .container_depositions p {
-    padding: 0px 150px;
+    padding: 0px 40px;
+    margin: 0 auto;
+    width: 400px;
   }
 
   #aspas_1 {
-    margin-left: 100px;
+    margin-left: -10px;
   }
 
   #aspas_2 {
-    margin-right: 40px;
+    margin-right: -70px;
   }
 
   #networking {
@@ -575,19 +574,23 @@ header nav ul a:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 100px 0px;
   }
-  .sobre {
-    text-align: justify;
-    align-items: center;
+
+  .sobre_title {
+    margin: 0 auto;
     justify-content: center;
+    align-items: center;
   }
 
   .sobre h2 {
     text-align: justify;
+    margin: 0 auto;
     width: 300px;
-    padding: 40px;
-    
+    padding: 10px 40px;
+    background-color: violet;
+    height: 0px 100px;
   }
   #separador {
     align-items: center;
+    margin: 0 auto;
   }
 }
