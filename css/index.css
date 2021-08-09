@@ -144,12 +144,11 @@ header nav ul a:hover {
 
 .sobre_title h1 {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 25px;
   max-height: 60px;
-  padding: 10px 10px;
+  padding: 10px 20px;
   border: 5px solid;
   width: 300px;
   margin: 0 auto;
@@ -307,10 +306,18 @@ header nav ul a:hover {
   .skill_container {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    margin-right: -30px;
+    background-color: violet;
+    /*display: block;*/
+    width: 400px;
+    margin: 0 auto;
+    
   }
   .skill_container1 {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .skills {
+    text-align: center;
+    
   }
 }
 
@@ -530,6 +537,7 @@ header nav ul a:hover {
   .section2 img {
     display: none;
   }
+
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -543,22 +551,20 @@ header nav ul a:hover {
     margin: 0 auto;
     margin-top: 50px;
     justify-content: center;
-           
   }
 
   .container_depositions p {
-    padding: 0px 120px;
-    }
+    padding: 0px 150px;
+  }
 
   #aspas_1 {
-    margin-left: 70px;
+    margin-left: 100px;
   }
 
   #aspas_2 {
-    margin-right: 10px;
+    margin-right: 40px;
   }
 
-  
   #networking {
     display: none;
   }
@@ -569,10 +575,17 @@ header nav ul a:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 100px 0px;
   }
+  .sobre {
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+  }
+
   .sobre h2 {
-    padding: 30px;
     text-align: justify;
     width: 300px;
+    padding: 40px;
+    
   }
   #separador {
     align-items: center;
