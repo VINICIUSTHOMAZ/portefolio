@@ -148,13 +148,17 @@ a:hover {
   #vinicius2 {
     display: block;
     position: absolute;
-    left: -9%;
-    bottom: -10px;
+    right: 0vw;
+    bottom: 0;
+    width: 115%;
+    
+    
+    
   }
   #retangulo2 {
     display: block;
     position: absolute;
-    bottom: -50px;
+    bottom: 0;
     width: 100vw;
     left: 0;
   }
@@ -260,12 +264,14 @@ section {
 }
 
 .sobre_title h1 {
+  font-size: 25px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 25px;
   max-height: 60px;
-  padding: 10px 100px;
+  padding: 10px;
   border: 5px solid;
   width: 300px;
   margin: 0 auto;
@@ -340,7 +346,6 @@ section {
 .habilidades h1 {
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 25px;
   padding: 10px 100px;
   border: 5px solid;
@@ -396,7 +401,7 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  gap: 30px;
+  gap: 0px;
   text-align: center;
   font-size: 14px;
 }
@@ -421,18 +426,24 @@ section {
 
 @media only screen and (max-width: 750px) {
   .skill_container {
-    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-columns: repeat(2, 1fr);*/
     justify-content: center;
     display: block;
-    width: 400px;
-    margin: 0 auto;
     bottom: 0;
+    left: 0;
   }
   .skill_container1 {
-    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-columns: repeat(2, 1fr);*/
+    display: block;
+    bottom: 0;
+    left: 0;
   }
   .skills {
     text-align: center;
+  }
+  .container_blue {
+    height: 300px !important;
+    padding: 50px;
   }
 }
 
@@ -455,6 +466,7 @@ section {
   width: 300px;
   margin: 0 auto;
   margin-top: 70px;
+  
 }
 
 .section6 p {
@@ -667,7 +679,6 @@ section {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "depoimento1" "depoimento2";
-    width: 400px;
     margin: 0 auto;
     margin-top: 50px;
     justify-content: center;
@@ -720,5 +731,16 @@ section {
   #separador {
     align-items: center;
     margin: 0 auto;
+  }
+  .slideshow-container {
+    width: 350px;
+    position: block;
+    margin: 0 auto;
+    bottom: 0;
+    left: -87px;
+    margin-top: -45px;
+  }
+  .dot {
+    display: none;
   }
 }
