@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="itr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vinícius</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,27 +16,24 @@
   </head>
 
   <body>
-    <div class="background">
-      <!--Header start-->
-      <header>
         <!--Topo start-->
+        
         <span id='topo'></span>
-        <nav class="menu">
-          <a href="./index.html"
-            ><img src="./imagens/logo.png" alt=""
-          /></a>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+          </label>
+          <label class="logo"><img src="/imagens/logo.png" alt=""></label>
           <ul>
-            <li><a href="#sobre_mim">SOBRE MIM</a></li>
-            <li><a href="#habilidades">HABILIDADES</a></li>
-            <li><a href="#portifolio">PORTFÓLIO</a></li>
-            <li><a href="#depoimentos">DEPOIMENTOS</a></li>
-            <button class="contato">
-              <li><a href="mailto:vinicius.thomaz@hotmail.com">CONTATO</a></li>
-            </button>
-          </ul>
+            <li><a class="active"  href="#sobre_mim">SOBRE MIM</a></li>
+            <li><a class="active" href="#habilidades">HABILIDADES</a></li>
+            <li><a class="active"  href="#portifolio">PORTFÓLIO</a></li>
+            <li><a class="active" href="#depoimentos">DEPOIMENTOS</a></li>
+            <li><a class="active" href="mailto:vinicius.thomaz@hotmail.com">CONTATO</a></li>
+           </ul>
         </nav>
-      </header>
-      <!--Header end-->
+        
       <!--Main start-->
       <main>
         <!--Section1 start-->
@@ -49,7 +47,9 @@
                 id="linkedin"
                 src="./imagens/Linkedin.png"
                 alt="linkedin"
-            /></a>
+            />
+            <img id="linkedin3" src="./imagens/likedin3.png" alt="">
+          </a>
           </div>
           <img id="vinicius" src="./imagens/Vinicius.png" alt="" />
           <img
@@ -57,7 +57,9 @@
             src="./imagens/RETANGULO.png"
             alt="Retangulo"
           />
-        </section>
+          <img id="vinicius2" src="./imagens/Vinicius2.png" alt="">
+          <img id="retangulo2" src="./imagens/retangulo2.png" alt="">
+         </section>
         <!--Section1 end-->
         <!--Section2 start-->
         <section class="section2">
@@ -362,7 +364,7 @@
               <p>Bianca Borges Estudante de Arquitetura e Urbanismo - ESAMC</p>
             </div>
           </div>
-        </section>
+        </section><section></section>
         <!--Depoimentos end-->
         <!--Footer start-->
         <footer>
@@ -393,6 +395,6 @@
         <!--Footer end-->
       </main>
       <!--Main end-->
-    </div>
+    
   </body>
 </html>
