@@ -130,25 +130,26 @@ a:hover {
   .left_section1 h1 {
     font-size: 20px !important;
     position: absolute;
-    bottom: 120px;
+    bottom: 110px;
     left: 20px;
   }
   .left_section1 h2 {
     font-size: 30px !important;
     position: absolute;
-    bottom: 80px;
+    bottom: 40px;
     left: 20px;
   }
   .left_section1 h3 {
     font-size: 15px !important;
     position: absolute;
-    bottom: 60px;
+    bottom: 20px;
     left: 20px;
   }
   #vinicius2 {
     display: block;
     position: absolute;
-    left: 2vw;
+    left: -7vw;
+    bottom: 0;
   }
   #retangulo2 {
     display: block;
