@@ -158,11 +158,13 @@ a:hover {
     left: 0;
   }
   #linkedin3 {
+    z-index: 1;
     display: block;
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     width: 40px;
-    right: 10px;
+    right: 15px;
+    
   }
   #linkedin {
     display: none;
@@ -212,13 +214,6 @@ section {
 }
 
 #vinicius {
-  height: 700px;
-  position: absolute;
-  right: 100px;
-  bottom: 0;
-}
-.vinicius2 {
-  display: none;
   height: 700px;
   position: absolute;
   right: 100px;
