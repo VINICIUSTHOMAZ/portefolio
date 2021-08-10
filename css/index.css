@@ -20,7 +20,6 @@ label.logo {
   padding: 0 50px;
 }
 
-
 nav ul {
   float: right;
   margin-right: 50px;
@@ -108,10 +107,10 @@ a:hover {
   }
   #vinicius {
     display: none;
-    z-index: -1;
-    margin-right: -170px;
   }
-
+  #linkedin {
+    display: none;
+  }
   .logo {
     float: left;
     width: 20px !important;
@@ -149,13 +148,13 @@ a:hover {
   #vinicius2 {
     display: block;
     position: absolute;
-    left: -7vw;
-    bottom: 0;
+    left: -9%;
+    bottom: -10px;
   }
   #retangulo2 {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     width: 100vw;
     left: 0;
   }
@@ -166,10 +165,6 @@ a:hover {
     bottom: 15px;
     width: 40px;
     right: 15px;
-    
-  }
-  #linkedin {
-    display: none;
   }
 }
 section {
@@ -644,16 +639,21 @@ section {
   }
   .section2 {
     flex-direction: column;
+    z-index: 1;
   }
+
+  .content {
+    display: block;
+    top: 0;
+  }
+
   .section2 .content {
     background: url("../imagens/Logo_inclined.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
-  .section2 h2 {
-    z-index: 1;
-  }
+
   .section2 img {
     display: none;
   }
