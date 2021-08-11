@@ -127,6 +127,7 @@ a:hover {
     bottom: 0;
     left: 0;
   }
+
   .left_section1 h1 {
     font-size: 20px !important;
     position: absolute;
@@ -151,9 +152,6 @@ a:hover {
     right: 0vw;
     bottom: 0;
     width: 115%;
-    
-    
-    
   }
   #retangulo2 {
     display: block;
@@ -278,6 +276,16 @@ section {
   margin-top: 50px;
 }
 
+.sobre {
+  margin: 0 auto;
+  justify-content: center;
+  display: block;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+}
+
 .section3 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -285,7 +293,9 @@ section {
   text-align: center;
   word-wrap: break-word;
   width: 600px;
+  text-align: justify;
   margin: 0 auto;
+  margin-top: 30px !important;
 }
 
 #separador {
@@ -441,9 +451,8 @@ section {
   .skills {
     text-align: center;
   }
-  .container_blue {
-    height: 300px !important;
-    padding: 50px;
+  .skill_container1 h1 {
+    padding: 10px;
   }
 }
 
@@ -466,7 +475,6 @@ section {
   width: 300px;
   margin: 0 auto;
   margin-top: 70px;
-  
 }
 
 .section6 p {
@@ -716,31 +724,34 @@ section {
   }
 
   .sobre_title {
-    margin: 0 auto;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .sobre h2 {
+    width: 270px;
+    padding: 15px 30px;
     text-align: justify;
-    margin: 0 auto;
-    width: 300px;
-    padding: 10px 40px;
-    height: 0px 100px;
   }
   #separador {
     align-items: center;
     margin: 0 auto;
   }
   .slideshow-container {
-    width: 350px;
-    position: block;
-    margin: 0 auto;
-    bottom: 0;
-    left: -87px;
-    margin-top: -45px;
+    position: absolute;
+    width: 320px;
+    
   }
   .dot {
     display: none;
+  }
+  .container_blue {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 70px 30px;
+    height: 300px !important;
   }
 }
