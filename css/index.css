@@ -74,6 +74,7 @@ a:hover {
     margin-left: 10px;
     width: 30px;
     margin-top: -10px;
+    z-index: 10000;
   }
   nav {
     position: absolute;
@@ -85,13 +86,11 @@ a:hover {
   }
   .checkbtn {
     display: block;
-    z-index: 1000;
+    z-index: 10000;
   }
   label.checkbtn {
-    background-color: aqua;
-    margin-left: 320px;
-    position: absolute;
     display: block;
+    z-index: 10000;
     
   }
   ul {
@@ -131,7 +130,7 @@ a:hover {
   }
   .logo {
     float: left;
-    background-color: aqua;
+    
   }
   .section1 {
     min-height: 100vh;
