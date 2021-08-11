@@ -20,7 +20,6 @@ label.logo {
   padding: 0px 50px;
   display: flex;
   position: absolute;
-  
 }
 
 nav ul {
@@ -68,7 +67,12 @@ a:hover {
 
 @media (max-width: 750px) {
   label.logo {
-    padding-left: 10px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 30px;
     margin-top: -10px;
   }
 
@@ -116,7 +120,6 @@ a:hover {
   }
   .logo {
     float: left;
-    width: 20px !important;
   }
   .section1 {
     min-height: 100vh;
@@ -152,15 +155,18 @@ a:hover {
   #vinicius2 {
     display: block;
     position: absolute;
-    right: 0vw;
-    bottom: 0;
-    width: 115%;
+    margin: 0 auto;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px;
+    width: 100%;
   }
   #retangulo2 {
     display: block;
     position: absolute;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     left: 0;
   }
   #linkedin3 {
@@ -744,7 +750,6 @@ section {
   .slideshow-container {
     position: absolute;
     width: 320px;
-    
   }
   .dot {
     display: none;
@@ -754,7 +759,9 @@ section {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 70px 30px;
+    padding: 70px 20px;
     height: 300px !important;
+    left: 0;
+    bottom: 0;
   }
 }
