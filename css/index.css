@@ -15,9 +15,6 @@ nav {
   height: 80px;
   width: 100%;
   margin-top: 30px;
-  
-  
-  
 }
 label.logo {
   padding: 0px 50px;
@@ -67,6 +64,9 @@ a:hover {
 #retangulo2 {
   display: none;
 }
+#linkedin3 {
+  display: none;
+}
 
 @media (max-width: 750px) {
   label.logo {
@@ -82,7 +82,6 @@ a:hover {
     position: absolute;
     margin: 20px auto;
     z-index: 10000;
-    
   }
 
   nav ul li a {
@@ -95,7 +94,6 @@ a:hover {
   label.checkbtn {
     display: block;
     z-index: 10000;
-    
   }
   ul {
     position: fixed;
@@ -134,7 +132,6 @@ a:hover {
   }
   .logo {
     float: left;
-    
   }
   .section1 {
     min-height: 100vh;
@@ -209,6 +206,10 @@ section {
 .left_section1 {
   padding: 200px 0;
   color: #010080;
+}
+
+.left_section1 a:hover {
+  background-color: transparent;
 }
 
 .section1 h1 {
@@ -461,19 +462,20 @@ section {
   padding: 50px 0px;
 }
 
+
 @media only screen and (max-width: 750px) {
   .skill_container {
-    /*grid-template-columns: repeat(2, 1fr);*/
-    justify-content: center;
     display: block;
-    bottom: 0;
-    left: 0;
+  }
+  .skill_container div {
+    padding: 20px 0px;
   }
   .skill_container1 {
     /*grid-template-columns: repeat(2, 1fr);*/
     display: block;
-    bottom: 0;
-    left: 0;
+  }
+  .skill_container1 div{
+    padding: 20px 0px;
   }
   .skills {
     text-align: center;
@@ -553,7 +555,6 @@ section {
   margin-left: auto;
   margin-right: auto;
   display: block;
-   
 }
 
 .footer {
@@ -783,20 +784,20 @@ section {
     margin: 0 auto;
   }
   .slideshow-container {
-    position: absolute;
-    width: 320px;
+    margin: 0 auto;
+    /*width: 320px;*/
   }
   .dot {
     display: none;
   }
   .container_blue {
     display: block;
+    
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     padding: 70px 20px;
-    height: 300px !important;
-    left: 0;
-    bottom: 0;
+    height: auto;
+    
   }
 }
