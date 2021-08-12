@@ -61,14 +61,14 @@ header nav ul li a {
   font-size: 17px;
   padding: 5px 5px;
   text-decoration: none;
-  color: #010080;
+  color: white;
   background: transparent !important;
 }
 
 /* ATE AQUI */
 
 header a:hover {
-  color: white;
+  color: #010080;
   transition: 0.3s;
 }
 
