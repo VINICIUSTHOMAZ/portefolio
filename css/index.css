@@ -229,15 +229,14 @@ section {
   background-size: cover;
 }
 
-@media (max-height: 600px) {
-  #menu-ul {
+@media (max-width: 600px) {
+  /*#menu-ul {
     padding: 0 20px;
     z-index: 6;
     letter-spacing: -1.5px;
     line-height: 20px;
-    word-spacing: 2px;
+    word-spacing: 2px;*/
   }
-
   #vinicius {
     height: 500px !important;
   }
@@ -320,7 +319,7 @@ section {
 
 .section2 {
   margin-top: auto;
-  padding: 30px 50px;
+  padding: 10px 50px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -334,14 +333,17 @@ section {
   );
 }
 
-.section2 h1 {
+/*.section2 h1 {
   font-size: 20px;
   padding-top: 30px;
   padding: 10px 0px;
-}
+}*/
 
 .section2 h2 {
-  font-size: 18px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  word-spacing: 2px;
 }
 
 .content {
@@ -774,7 +776,10 @@ section {
   }
   .content {
     display: block;
-    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
   }
   .section2 .content {
     background: url("../imagens/Logo_inclined.png");
