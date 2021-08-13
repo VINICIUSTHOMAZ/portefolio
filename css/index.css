@@ -36,7 +36,7 @@ header {
 
 header nav {
   padding: 10px 0px;
-  /* height: 80px; */
+  max-width: 100vw;
   width: 100%;
   text-decoration: none;
   z-index: 6;
@@ -159,7 +159,7 @@ header a:hover {
   }
   /* HEADER END */
   a:hover,
-  a.active {
+  a.nav_link {
     background: none;
   }
   #retangulo {
@@ -185,7 +185,7 @@ header a:hover {
     position: absolute;
     left: 20px;
     z-index: 2;
-    bottom: 125px;
+    bottom: 40px;
   }
   .section1Titles h1 {
     font-size: 20px !important;
@@ -206,7 +206,7 @@ header a:hover {
     left: 0;
     justify-content: center;
     align-items: center;
-    bottom: 85px;
+    bottom: 0;
     width: 100%;
   }
   #retangulo2 {
@@ -214,12 +214,12 @@ header a:hover {
     position: absolute;
     left: 0;
     width: 100%;
-    bottom: 85px;
+    bottom: 0;
   }
   #linkedin3 {
     display: block;
     position: absolute;
-    bottom: 100px;
+    bottom: 10px;
     width: 40px;
     right: 15px;
   }
@@ -230,12 +230,12 @@ section {
 }
 
 @media (max-width: 600px) {
-  /*#menu-ul {
+  #menu-ul {
     padding: 0 20px;
     z-index: 6;
-    letter-spacing: -1.5px;
+    
     line-height: 20px;
-    word-spacing: 2px;*/
+    word-spacing: 2px;
   }
   #vinicius {
     height: 500px !important;
@@ -248,7 +248,6 @@ section {
   #menu-ul {
     padding: 0 20px;
     z-index: 6;
-    letter-spacing: -1.5px;
     line-height: 20px;
     word-spacing: 2px;
   }
@@ -256,22 +255,16 @@ section {
   #vinicius {
     height: 500px !important;
   }
-  .depoimento1 {
-    word-wrap: break-word;
-    width: 500px;
-  }
 }
-
 /* MAIN */
 
 .section1 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  height: 100vh;
+  height: calc(100vh - 104px);
   padding: 0 50px;
   bottom: 0;
   display: flex;
   margin-top: 0;
-  margin-bottom: -105px;
 }
 
 .left_section1 {
@@ -730,7 +723,7 @@ section {
   transition: background-color 0.6s ease;
 }
 
-.active,
+.nav_link,
 .dot:hover {
   background-color: #fff;
 }
@@ -800,15 +793,17 @@ section {
     /*grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "depoimento1"."depoimento2";*/
-    margin: 0 auto;
+    
     margin-top: 50px;
     display: block;
     justify-content: center;
+    max-width: 100vw;
   }
   .container_depositions p {
     padding: 0px 40px;
     margin: 0 auto;
     width: 320px;
+
   }
   #aspas_1 {
     display: none;
