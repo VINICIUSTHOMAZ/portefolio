@@ -44,7 +44,7 @@ header nav {
 
 header nav ul {
   float: right;
-  padding-right: 50px;
+  padding-right: 30px;
   z-index: 6;
 }
 
@@ -57,9 +57,9 @@ header nav ul li {
 /* SE QUISER ALTERAR COR OU TAMANHO DA FONT ALTERE AQUI */
 
 header nav ul li a {
-  font-weight: 900;
-  font-size: 17px;
-  padding: 5px 5px;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 10px;
   text-decoration: none;
   color: white;
   background: transparent !important;
@@ -229,14 +229,14 @@ section {
   background-size: cover;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   #menu-ul {
     padding: 0 20px;
     z-index: 6;
-    
     line-height: 20px;
     word-spacing: 2px;
   }
+    
   #vinicius {
     height: 500px !important;
   }
@@ -325,12 +325,6 @@ section {
     #1d1d1d 90.49%
   );
 }
-
-/*.section2 h1 {
-  font-size: 20px;
-  padding-top: 30px;
-  padding: 10px 0px;
-}*/
 
 .section2 h2 {
   font-size: 20px;
