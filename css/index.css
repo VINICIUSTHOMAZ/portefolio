@@ -404,7 +404,8 @@ section {
   gap: 100px 0px;
   grid-auto-flow: row;
   grid-template-areas: "Professor . Engenheiro" ". Projetista .";
-  padding: 40px;
+  padding: 0px 40px;
+  width: 100%;
 }
 
 .Professor {
