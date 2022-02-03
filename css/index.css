@@ -555,8 +555,10 @@ section {
 
 .container_blue {
   background-color: #010080;
-  height: 750px;
+  /*height: 750px;*/
   padding: 100px;
+  
+
 }
 
 .section6 h1 {
